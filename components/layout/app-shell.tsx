@@ -18,6 +18,9 @@ export function AppShell({ children }: { children: ReactNode }) {
         <div className="flex min-h-screen flex-1 flex-col">
           <Header onMenuClick={() => setDrawerOpen(true)} />
           <main className={cn("flex-1 px-4 pb-24 pt-5 md:px-6 md:pb-8 lg:px-6")}>{children}</main>
+          <footer className="border-t border-outline-variant px-4 py-4 text-center text-xs text-on-surface-variant md:px-6">
+            Built by Muhammad Shakir Student at PUCIT,
+          </footer>
         </div>
       </div>
       <BottomTabBar />
