@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Inter, JetBrains_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { AppProviders } from "@/components/providers";
 import { AppShell } from "@/components/layout/app-shell";
@@ -31,6 +32,7 @@ export default function RootLayout({
         <AppProviders>
           <AppShell>{children}</AppShell>
         </AppProviders>
+        <Analytics />
       </body>
     </html>
   );
